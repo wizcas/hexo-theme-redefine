@@ -118,6 +118,9 @@
     <!--- Font Part-->
     <% if (theme.home_banner.custom_font.enable) { %>
         <link href="<%- theme.home_banner.custom_font.url %>" rel="stylesheet">
+        <% theme.home_banner.custom_font.urls.forEach(function(url){ %>
+            <link href="<%- url %>" rel="stylesheet">
+        <% }); %>
     <% } %>
     <% if (theme.articles.code_block.font.enable) { %>
         <link href="<%- theme.articles.code_block.font.url %>" rel="stylesheet">

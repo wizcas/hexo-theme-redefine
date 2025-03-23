@@ -3,7 +3,7 @@ $title-font-size = $temp-title-fs ? convert($temp-title-fs) : 2.8rem
 $temp-subtitle-fs = hexo-config('home_banner.text_style.subtitle_size')
 $subtitle-font-size = $temp-subtitle-fs ? convert($temp-subtitle-fs) : 1.4rem
 $temp-line-height = hexo-config('style.first_screen.line_height')
-$line-height = $temp-line-height ? $temp-line-height : 1.2
+$line-height = $temp-line-height ? $temp-line-height : 1
 $home-banner-icon-size = 1.6rem
 
 @require '../../common/variables'
@@ -30,11 +30,12 @@ $home-banner-icon-size = 1.6rem
       font-size $title-font-size
       line-height $line-height
       color var(--home-banner-text-color)
+      text-shadow 0 0 10px rgba(0, 0, 0, 0.5)
 
       p
         margin 0
         opacity 0.9
-        font-family 'Geist Variable', sans-serif
+        font-family 'Georgia', 'Palatino', 'Cambria', 'Noto Serif', 'Times New Roman', serif
         font-weight 350
 
         i
